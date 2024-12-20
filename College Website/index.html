@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G81Z3FNT8F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G81Z3FNT8F');
+</script>
+  </head>
+  <body>
+    <a href="https://scmspoly.linways.com/v4/adm-applicant/login" class="button1">Admission</a>
+    <section class="header">
+      <nav>
+        <video id="background-video" playsinline autoplay muted loop id="myVideo">
+          <source src="images/SCMS.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li class="dropdown">
+              <a href="course.html">COURSE</a>
+              <div class="dropdown-content">
+                <a href="CT.html">COMPUTER</a>
+                <a href="CE.html">CIVIL</a>
+                <a href="EEE.html">ELECTRICAL</a>
+                <a href="ME.html">MECHANICAL</a>
+                <a href="AU.html">AUTOMOBILE</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="blog.html">BLOG</a>
+            <div class="dropdown-content">
+                <a href="CAMPUSLIFE.html">CAMPUS LIFE</a>
+                <a href="Sports.html">SPORTS</a>
+                <a href="NSS.html">NSS</a>
+              </div>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <a href="Events.html" class="btn-liquid">
+        <span class="inner">Upcoming Events</span>
+    </a>
+      <div class="text-box">
+        <h1>SCMS</h1>
+        <h2>College of Polytechnics</h2>
+        <p>Vaikkara, Odakkali, Kerala 683549</p>
+        <a href="https://scmspoly.linways.com/v4/adm-applicant/login" class="hero-btn">Admission</a>
+      </div>
+    </section>
+   
+    <div class="slideshow-container">
+      <div class="marquee">
+        <marquee behavior="alternate" bgcolor="f44336" direction="left" onmouseover="this.stop();" onmouseout="this.start();">Candidates who have passed qualifying examination with Mathematics, English and Science subjects are eligible to <a href="https://scmspoly.linways.com/v4/adm-applicant/login">Apply Online</a></marquee>
+        </div>
+      <img class="mySlides" src="images/p1.JPG" >
+      <img class="mySlides" src="images/p2.JPG" >
+      <img class="mySlides" src="images/p3.jpg" >
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+setInterval(function(){
+  plusSlides(1);
+}, 3000);
+
+  </script>
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>SCMS College of Polytechnics (SCP)
+         started from the academic year 2016,
+          offers Diploma programmes in the following 
+          branches are given below :</p>
+      <div class="row-c">
+      <a href="CT.html"><div class="course-CT">
+        <h3>DIPLOMA IN COMPUTER SCIENCE AND ENGINEERING</h3>
+      </div></a>
+      <a href="ME.html"><div class="course-ME">
+        <h3>DIPLOMA IN MECHANICAL ENGINEERING</h3>
+      </div></a>
+      <a href="EEE.html"><div class="course-EEE">
+        <h3>DIPLOMA IN ELECTRICAL & ELECTRONICS ENGINEERING</h3>
+      </div></a>
+      <a href="CE.html"><div class="course-CE">
+        <h3>DIPLOMA IN CIVIL ENGINEERING</h3>
+      </div></a>
+      <a href="AU.html"><div class="course-AU">
+        <h3>DIPLOMA IN AUTOMOBILE ENGINEERING</h3>
+      </div></a>
+      </div>
+    </section>
+    <section class="campus">
+      <h1>Our Campus</h1>
+      <p>The workshop also has Lathes, Drilling Machines, Round Saw etc. which will provide hands-on experience to each of the students.</p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/F1.jpg">
+          <div class="layer">
+          <h3>CANTEEN</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/F2.jpg">
+          <div class="layer">
+          <h3>WORKSHOP</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/F3.jpg">
+          <div class="layer">
+          <h3>LAB</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Students are provided with facilities for Smithy, Carpentry, Foundry and basic Electrical Works.</p>
+      <div class="row">
+      <div class="facilities-col">
+        <img src="images/F4.jpg">
+        <h3>World Class Library</h3>
+        <p>A collection of nearly 5000 books on relevant technology subjects is available at the library. The library also subscribes to a variety of national and international technical journals. Since it is open from 9.00 a.m. to 5.00 p.m. on all working days, students can make full use of the facility.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/F5.jpg">
+          <h3>Largest Play Ground</h3>
+          <p>We provide our students and staff with a football court and badminton court as we believe that physical fitness is not only one of the most important keys to a healthy body, it is the basis of dynamic and creative intellectual activity.</p>
+          </div>
+          <div class="facilities-col">
+            <img src="images/F6.jpg">
+            <h3>Advanced Machinery</h3>
+            <p>Our Electrical Lab is equipped with DC series motor, DC Shunt Motor, Motor Generator set, Slip Ring Induction Motor, Transformers, Universal Motor, Single Phase Induction Motor etc., for students to conduct various experiments..</p>
+            </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h1>What Our Students Say</h1>
+      <p>We help our students to gain the knowledge, practical experience and skills they need to succeed in their careers, wherever in the world they choose to work and live.</p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/user1.jpg">
+          <div>
+            <p>The atmosphere of the college is good.
+              The staffs are always supportive and encouraging.
+              They guarantee good placement jobs and provide 
+              effective placement training. College provides very 
+              good facilities including the necessary labs and
+               equipments and that we need for every trade.</p>
+            <h3>Godson George</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="images/user2.jpg">
+          <div>
+            <p>It was a great opportunity to study in this college. 
+              The teacher and non teaching staff where well qualified and 
+              the support as through any situation. The collage provide good 
+              facilities and lab equipment overall it was good experience.</p>
+            <h3>Sarath Sarath</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+      <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script><script src="./LButton.js"></script>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>The year 1976 saw the birth of a luminous star of learning on the educational horizon.
+         The star was to later blaze a trail across the <br>Indian skies guiding scores of students 
+         to scale the heights of success in their careers, professions and enterprises.<br><br>
+         Tel: +91-484-2650500, +917034780088, +919961678502
+
+         Email: scmspoly@scmsgroup.org
+         
+         © 2021 SCMS College of Polytechnics</p>
+         <div class="icons">
+          <a href="https://www.facebook.com/scmspoly/"><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/scmspolytech/"><i class="fa fa-instagram"></i></a>
+          <a href="https://scmspoly.linways.com/"><i class="fa fa-external-link"></i></a>
+         </div>
+         <p>Made With <a class="glow-on-hover" href="PacMan.html"><i class="fa fa-heart-o"></i></a> by SCP CT 2020-2023</p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right= "0";
+      }
+      function hideMenu(){
+        navLinks.style.right= "-200px";
+      }
+    </script>
+  </body>
+</html>
