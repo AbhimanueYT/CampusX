@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page For Facilities</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G81Z3FNT8F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G81Z3FNT8F');
+  </script>
+</head>
+  <body>
+    <section class="header1">
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">BACK</a></li>
+            <li><a href="signup.php">REGISTRATIQN</a></li>
+            <div class="container">
+              <div class="card">
+                <h3>Upload Files</h3>
+                <div class="drop_box">
+                  <header>
+                    <h4>Select File here</h4>
+                  </header>
+                  <p>Files Supported: PDF, TEXT, DOC , DOCX , ZIP</p>
+    <input id="fileupload" type="file" class="btn" accept=".doc,.docx,.pdf,.zip" name="fileupload" /><br>
+    <button class="btn" id="upload-button" onclick="uploadFile()"> Upload </button>
+    </div>
+    </div>
+    </div>
+    </ul>
+    </div>
+    </nav>
+    </section>
+    <script>
+      async function uploadFile() {
+          let formData = new FormData();           
+          formData.append("file", fileupload.files[0]);
+          await fetch('/upload.php', {
+            method: "POST", 
+            body: formData
+          });    
+          alert('The file has been uploaded successfully.');
+      }
+      </script>
+      <script type="text/javascript">
+        function preventBack(){
+          window.history.forward()};
+          setTimeout("preventBack()",0);
+          window.onunload=function(){null;}
+    
+      </script>
+</body>
+</html>
