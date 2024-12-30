@@ -1,6 +1,6 @@
-**CampusConnect: Your Complete College Companion**
+**CampusX**
 
-CampusConnect is a dynamic and user-friendly college website designed to provide a comprehensive online experience for students, prospective students, faculty, and visitors. Built using HTML, CSS, PHP, and JavaScript, this platform serves as a one-stop hub for all essential college information and services.
+CampusX is a dynamic and user-friendly college website designed to provide a comprehensive online experience for students, prospective students, faculty, and visitors. Built using HTML, CSS, PHP, and JavaScript, this platform serves as a one-stop hub for all essential college information and services.
 
 ### Features:
 
@@ -28,4 +28,4 @@ CampusConnect is a dynamic and user-friendly college website designed to provide
 - **JavaScript:** To enhance interactivity, including event handling, form validation, and the hidden game feature.
 
 **Conclusion:**
-CampusConnect is designed to be a comprehensive, engaging, and easy-to-navigate platform for students, faculty, and visitors. It effectively combines academic and extracurricular resources with interactive features, making it the perfect companion for anyone connected to the college. Whether you're a student looking for study materials, a visitor exploring the college's offerings, or a faculty member sharing resources, CampusConnect provides everything you need in one place.
+CampusX is designed to be a comprehensive, engaging, and easy-to-navigate platform for students, faculty, and visitors. It effectively combines academic and extracurricular resources with interactive features, making it the perfect companion for anyone connected to the college. Whether you're a student looking for study materials, a visitor exploring the college's offerings, or a faculty member sharing resources, CampusX provides everything you need in one place.
